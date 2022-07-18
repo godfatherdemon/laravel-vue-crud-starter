@@ -2,6 +2,10 @@
 
 import { register } from 'register-service-worker';
 
+// import DataTable from 'laravel-vue-datatable';
+
+// Vue.use(DataTable);
+
 if (process.env.NODE_ENV === 'production') {
   register(`${process.env.BASE_URL}service-worker.js`, {
     ready() {

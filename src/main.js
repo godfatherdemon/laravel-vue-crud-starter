@@ -4,11 +4,13 @@ import VueRouter from 'vue-router';
 import App from './App.vue';
 import router from './router';
 import './registerServiceWorker';
-
+import { VuejsDatatableFactory } from 'vuejs-datatable';
+ 
+Vue.use( VuejsDatatableFactory );
 Vue.use(Vuetify);
 Vue.use(VueRouter);
 
-new Vue({ // eslint-disable-line no-new
+new Vue({ 
   el: '#app',
   router,
   render: h => h(App),
