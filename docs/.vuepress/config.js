@@ -3,7 +3,7 @@ const env = require('./env');
 module.exports = {
   ...env.config,
   serviceWorker: true,
-  title: 'Vue CRUD',
+  title: 'SI Aplikasi',
   description: 'Vue.js based REST-ful CRUD system',
   plugins: {
     ...env.plugins,
@@ -18,7 +18,7 @@ module.exports = {
   head: [
     ['link', {
       rel: 'icon',
-      href: '/images/icon/favicon.png'
+      href: '/images/icon/logo.png'
     }],
     ['link', {
       rel: 'manifest',
@@ -61,7 +61,7 @@ module.exports = {
         buttonText: "Refresh"
       }
     },
-    logo: '/images/logo/vue-crud-sm.png',
+    logo: '/images/icon/logo.png',
     nav: [{
         text: 'Guide',
         link: '/guide/essentials/introduction'
@@ -100,7 +100,7 @@ module.exports = {
       },
       {
         text: 'GitHub',
-        link: 'https://repo.jabarprov.go.id/diskominfo/website-si-aplikasi-frontends'
+        link: 'https://github.com/'
       },
     ],
     sidebar: {
@@ -155,7 +155,7 @@ module.exports = {
           '/api/rest/profile',
           '/api/rest/crud',
         ]
-      }, 
+      },
       {
         title: 'GraphQL',
         collapsable: false,

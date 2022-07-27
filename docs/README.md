@@ -10,5 +10,5 @@ features:
   details: Vue CRUD uses the vue along with its ecosystem (Vuex, Vuetify, etc). Enjoy the benefits of the most popular JS framework in the world
 - title: Compatible with REST API
   details: The application architecture is adapted to work with REST API
-footer: MIT Licensed | Copyright © 2022 DISKOMINFO
+footer: MIT Licensed | Copyright © 2018-present Szczepan Masny
 ---
