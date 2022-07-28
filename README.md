@@ -232,7 +232,7 @@ The application requires a connection with the appropriate API. API can be creat
 
 ## Documentation
 To check out docs, visit :
-#### <a href="https://"" target="_blank">vue-crud.github.io</a>.
+#### <a href="https://vuejs.org/" target="_blank">vue-crud</a>.
 
 ## Contributing
 If you have an idea about improving Vue CRUD, do not hesitate.
