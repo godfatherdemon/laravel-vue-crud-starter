@@ -52,29 +52,6 @@
           {{ $t('global.login.title') }}
         </h1>
 
-        <!-- locale select -->
-        <v-menu v-if="localeSelectable">
-          <template v-slot:activator="{ on }">
-            <v-btn
-              v-on="on"
-              dark fab small
-              color="secondary"
-              class="mb-2"
-            >
-              <v-icon>translate</v-icon>
-            </v-btn>
-          </template>
-          <v-list>
-            <v-list-item
-              v-for="(locale, i) in locales"
-              :key="i"
-              @click="changeLocale(locale.name)"
-            >
-              <v-list-item-title>{{ locale.text }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-
         <!-- login form -->
         <v-form
           v-model="valid"

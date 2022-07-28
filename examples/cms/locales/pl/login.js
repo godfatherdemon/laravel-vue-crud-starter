@@ -1,5 +1,5 @@
 export default {
-  title: 'Vue CRUD',
+  title: 'SI Aplikasi',
   login: 'E-mail',
   username: 'Nazwa użytkownika',
   password: 'Hasło',

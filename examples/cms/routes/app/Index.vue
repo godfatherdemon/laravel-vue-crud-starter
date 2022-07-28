@@ -7,7 +7,7 @@
       :title="$store.state.title"
       title-link="/home"
       :show-logo="true"
-      logo="vue-crud-avatar.png"
+      logo="logo.png"
       sidebar-color="secondary"
       :sidebar-dark="true"
       title-color="primary"
@@ -95,75 +95,75 @@ export default {
     sidebarItems: [
       {
         icon: 'view_quilt',
-        text: 'profile.name',
+        text: 'cms.name',
         model: false,
-        guard: 'PROFILE',
-        route: '/profile',
+        guard: 'CMS',
+        route: '/cms',
         children: [
           {
-            text: 'profile.settings',
+            text: 'cms.settings',
             route: '/settings',
           },
           {
-            text: 'profile.messages',
+            text: 'cms.messages',
             route: '/messages',
           },
           {
-            text: 'profile.menuItems',
+            text: 'cms.menuItems',
             route: '/menu-items',
           },
         ],
       },
       {
         icon: 'shopping_cart',
-        text: 'app.name',
+        text: 'store.name',
         model: false,
-        guard: 'APP',
-        route: '/app',
+        guard: 'STORE',
+        route: '/store',
         children: [
           {
-            text: 'app.sections',
+            text: 'store.sections',
             route: '/sections',
           },
           {
-            text: 'app.name',
-            route: '/name',
+            text: 'store.products',
+            route: '/products',
           },
           {
-            text: 'app.owners',
-            route: '/owners',
+            text: 'store.customers',
+            route: '/customers',
           },
           {
-            text: 'app.transactions',
+            text: 'store.transactions',
             route: '/transactions',
           },
           {
-            text: 'app.transactionLogs',
-            route: '/transaction-logs',
+            text: 'store.transactionProducts',
+            route: '/transaction-products',
           },
         ],
       },
       {
         icon: 'edit',
-        text: 'staging.name',
+        text: 'blog.name',
         model: false,
-        guard: 'STAGING',
-        route: '/staging',
+        guard: 'BLOG',
+        route: '/blog',
         children: [
           {
-            text: 'staging.posts',
+            text: 'blog.posts',
             route: '/posts',
           },
           {
-            text: 'staging.categories',
+            text: 'blog.categories',
             route: '/categories',
           },
           {
-            text: 'staging.tags',
+            text: 'blog.tags',
             route: '/tags',
           },
           {
-            text: 'staging.postTags',
+            text: 'blog.postTags',
             route: '/post-tags',
           },
         ],

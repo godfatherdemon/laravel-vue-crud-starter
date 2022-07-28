@@ -1,7 +1,7 @@
 import main from '@/config/main'
 
 const defaults = {
-  title: 'Vue CRUD',
+  title: 'SI Aplikasi',
   locales: [
     {
       name: 'en',
