@@ -1,11 +1,11 @@
 <div align="center" style="color:red;">
-  <h1>the project is not supported</h1>
+  <h1>SI Aplikasi</h1>
   <h2>
-    If you want to contribute to this project please fork from this project or email me to add you to what-crud group
+    Website SI Aplikasi frontends
   </h2>
 </div>
 <p align="center">
-  <img width="300" height="auto" src="https://user-images.githubusercontent.com/18534115/49319435-29ccf000-f4fd-11e8-9fc6-8678864132bd.png">
+  <img width="300" height="auto" src="./public/logo.png">
 </p>
 <h1 align="center">SI Aplikasi</h1>
 <div align="center">
@@ -23,12 +23,10 @@
 * Vue CRUD uses the vue along with its ecosystem (Vuex, Vuetify, etc). Enjoy the benefits of the most popular JS framework in the world.
 * The application architecture is adapted to work with REST API
 
-![Vue CRUD demo](https://user-images.githubusercontent.com/18534115/55162114-646f2e00-5167-11e9-8948-c4fc964daa28.gif)
-
 ## Functions
 Vue CRUD provides a set of utilities, from which you can compose your own application. Features included in the system can communicate with each other thanks to the use of the Vuex library. Vue CRUD includes the following elements:
 
-- **CRUD** | <a href="http://vue-crud-demo.id-a.pl/#/crud" target="_blank">DEMO / SANDBOX</a>:
+- **CRUD** | <a href="http://" target="_blank">DEMO / SANDBOX</a>:
   - operations on records:
     - Store,
     - Update,
@@ -52,11 +50,11 @@ Vue CRUD provides a set of utilities, from which you can compose your own applic
     - management of a child table from the parent table module,
     - export to excel (xlsx),
     - table refreshing,
-- **Authentication system** | <a href="http://vue-crud-demo.id-a.pl/#/login" target="_blank">DEMO / SANDBOX</a>:
+- **Authentication system** | <a href="http://" target="_blank">DEMO / SANDBOX</a>:
   - login form (built-in communication with API, validation),
   - optional locale selection,
   - redirecting to the app,
-- **App layout components** | <a href="http://vue-crud-demo.id-a.pl/#/app" target="_blank">DEMO / SANDBOX</a>:
+- **App layout components** | <a href="http://" target="_blank">DEMO / SANDBOX</a>:
   - Toolbar (with optional elements):
     - title,
     - logo,
@@ -94,7 +92,7 @@ The record creation / editing form supports the following types of fields:
  <img
   width="auto"
   height="400"
-  src="https://user-images.githubusercontent.com/18534115/68077595-9fed6d00-fdc6-11e9-9e52-37dad9bb4bc1.png"
+  <!-- src="https://user-images.githubusercontent.com/18534115/68077595-9fed6d00-fdc6-11e9-9e52-37dad9bb4bc1.png" -->
   alt="app layout on desktop"
 />
 
@@ -102,16 +100,16 @@ The record creation / editing form supports the following types of fields:
  <img
   width="auto"
   height="400"
-  src="https://user-images.githubusercontent.com/18534115/68077552-3ff6c680-fdc6-11e9-9b8c-3e92dce596c5.png"
+  <!-- src="https://user-images.githubusercontent.com/18534115/68077552-3ff6c680-fdc6-11e9-9b8c-3e92dce596c5.png" -->
   alt="app layout on mobile device"
 />
 
 
 ## Demo versions
 
-#### <a href="http://vue-crud-demo.id-a.pl" target="_blank">DEMO / SANDBOX</a>
+#### <a href="http://" target="_blank">DEMO / SANDBOX</a>
 
-#### <a href="http://vue-crud-crm.id-a.pl" target="_blank">CRM DEMO</a>
+#### <a href="http://" target="_blank">CRM DEMO</a>
 Credentials with limited privileges (readonly):\
 Login:  guest@vue-crud.com\
 Pass:   ajSGenC0\
@@ -125,7 +123,7 @@ Do you want to test the application quickly, and you do not have an API ready? N
 
 1. Clone Vue CRUD:
 ``` console
-git clone git@github.com:what-crud/vue-crud.git
+git clone git@repo.jabarprov.go.id:diskominfo/website-si-aplikasi-frontends.git
 ```
 2. Type following commands:
 ``` console
@@ -234,7 +232,7 @@ The application requires a connection with the appropriate API. API can be creat
 
 ## Documentation
 To check out docs, visit :
-#### <a href="https://vue-crud.github.io/" target="_blank">vue-crud.github.io</a>.
+#### <a href="https://"" target="_blank">vue-crud.github.io</a>.
 
 ## Contributing
 If you have an idea about improving Vue CRUD, do not hesitate.
