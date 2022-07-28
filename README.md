@@ -242,4 +242,4 @@ Developers interested in contributing should read the [Code of Conduct](./CODE_O
 ## License
 [MIT](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2018-present, DISKOMINFO
+Copyright (c) 2022-present, DISKOMINFO
