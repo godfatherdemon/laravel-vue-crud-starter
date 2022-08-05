@@ -1,6 +1,6 @@
 {
-  "name": "SI Aplikasi",
-  "short_name": "SIA",
+  "name": "vue-crud",
+  "short_name": "vue-crud",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
