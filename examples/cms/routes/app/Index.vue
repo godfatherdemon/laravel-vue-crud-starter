@@ -7,7 +7,7 @@
       :title="$store.state.title"
       title-link="/home"
       :show-logo="true"
-      logo="logo.png"
+      logo="vue-crud-avatar.png"
       sidebar-color="secondary"
       :sidebar-dark="true"
       title-color="primary"

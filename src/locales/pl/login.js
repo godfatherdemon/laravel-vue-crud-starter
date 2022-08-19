@@ -1,5 +1,5 @@
 export default {
-  title: 'SI Aplikasi',
+  title: 'Your App',
   login: 'E-mail',
   username: 'Nazwa użytkownika',
   password: 'Hasło',

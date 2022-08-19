@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import App from './routes/app/Index'
-import appRoutes from './routes/app/router'
-import Login from './routes/login/Index'
+import Crud from './routes/Crud.vue'
+import App from './routes/App.vue'
+import Login from './routes/Login.vue'
+import Logged from './routes/Logged.vue'
+
 import store from '@/store/'
 
 Vue.use(Router)
@@ -10,10 +12,32 @@ Vue.use(Router)
 const router = new Router({
   routes: [
     {
-      path: '/',
+      path: '/crud',
+      name: 'crud',
+      component: Crud,
+    },
+    {
+      path: '/app',
       name: 'app',
       component: App,
-      children: appRoutes,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login,
+      beforeEnter: (to, from, next) => {
+        var auth = localStorage.getItem('token')
+        if (auth) {
+          next('/')
+        } else {
+          next()
+        }
+      },
+    },
+    {
+      path: '/',
+      name: 'logged',
+      component: Logged,
       beforeEnter: (to, from, next) => {
         var auth = localStorage.getItem('token')
         if (!auth) {
@@ -21,40 +45,15 @@ const router = new Router({
           next('/login')
         } else {
           Vue.http.get('auth/user')
-            .then(response => {
+            .then(() => {
               next()
-            }, response => {
+            }, () => {
               next('/login')
             })
         }
       },
     },
-    {
-      path: '/login',
-      name: 'login',
-      component: Login,
-    },
   ],
-})
-
-router.beforeEach(function (to, from, next) {
-  let middleware
-  store.state.page = null
-  to.matched.some(m => {
-    middleware = m.meta.guard
-  })
-  if (typeof middleware === 'undefined') {
-    next()
-  } else {
-    if (store.getters['auth/checkPermission'](middleware)) {
-      window.scrollTo(0, 0)
-      next()
-    } else if (store.getters['auth/isLogged']) {
-      next('/home')
-    } else {
-      next('/login')
-    }
-  }
 })
 
 export default router

@@ -42,9 +42,5 @@ export default {
     refreshTable: 'Odswież tabelę',
     copyToExcel: 'Kopiuj do Excela',
     clearFilters: 'Wyczyść filtry',
-    move: 'Przenieś',
-    insert: 'Wstaw',
-    insertUnassigned: 'Wstaw bez przypisania',
-    cancelMove: 'Anuluj przenoszenie',
   },
 }

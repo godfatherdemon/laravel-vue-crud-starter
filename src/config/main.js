@@ -1,5 +1,5 @@
 export default {
-  title: 'YourCMS',
+  title: 'Your App',
   locales: [
     {
       name: 'en',
