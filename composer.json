@@ -6,7 +6,7 @@
         "framework",
         "laravel"
     ],
-    "license": "MIT",
+    "license": "DISKOMINFO",
     "require": {
         "php": "^7.3|^8.0",
         "fideloper/proxy": "^4.4",

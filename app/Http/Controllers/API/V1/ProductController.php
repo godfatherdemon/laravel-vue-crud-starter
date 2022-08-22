@@ -46,7 +46,7 @@ class ProductController extends BaseController
         $product = $this->product->create([
             'name' => $request->get('name'),
             'description' => $request->get('description'),
-            'price' => $request->get('price'),
+            'site' => $request->get('site'),
             'category_id' => $request->get('category_id'),
         ]);
 
@@ -65,7 +65,7 @@ class ProductController extends BaseController
         }
         $product->tags()->sync($tag_ids);
 
-        return $this->sendResponse($product, 'Product Created Successfully');
+        return $this->sendResponse($product, 'App Created Successfully');
     }
 
     /**

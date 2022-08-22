@@ -13,7 +13,16 @@
         <router-link to="/products" class="nav-link">
           <i class="nav-icon fas fa-list orange"></i>
           <p>
-            Product
+            Pentest
+          </p>
+        </router-link>
+      </li>
+
+      <li class="nav-item">
+        <router-link to="/products" class="nav-link">
+          <i class="nav-icon fas fa-list red"></i>
+          <p>
+            Staging
           </p>
         </router-link>
       </li>

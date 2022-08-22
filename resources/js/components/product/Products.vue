@@ -7,7 +7,7 @@
         
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Product List</h3>
+                <h3 class="card-title">Apps List</h3>
 
                 <div class="card-tools">
                   
@@ -26,7 +26,7 @@
                       <th>Name</th>
                       <th>Description</th>
                       <th>Category</th>
-                      <th>Price</th>
+                      <th>Domain</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -37,7 +37,7 @@
                       <td>{{product.name}}</td>
                       <td>{{product.description | truncate(30, '...')}}</td>
                       <td>{{product.category.name}}</td>
-                      <td>{{product.price}}</td>
+                      <td>{{product.site}}</td>
                       <!-- <td><img v-bind:src="'/' + product.photo" width="100" alt="product"></td> -->
                       <td>
                         
@@ -67,8 +67,8 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" v-show="!editmode">Create New Product</h5>
-                    <h5 class="modal-title" v-show="editmode">Edit Product</h5>
+                    <h5 class="modal-title" v-show="!editmode">Create New App</h5>
+                    <h5 class="modal-title" v-show="editmode">Edit App</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -89,10 +89,10 @@
                             <has-error :form="form" field="description"></has-error>
                         </div>
                         <div class="form-group">
-                            <label>Price</label>
-                            <input v-model="form.price" type="text" name="price"
-                                class="form-control" :class="{ 'is-invalid': form.errors.has('price') }">
-                            <has-error :form="form" field="price"></has-error>
+                            <label>Domain</label>
+                            <input v-model="form.site" type="text" name="site"
+                                class="form-control" :class="{ 'is-invalid': form.errors.has('site') }">
+                            <has-error :form="form" field="site"></has-error>
                         </div>
                         <div class="form-group">
 
@@ -148,7 +148,7 @@
                     tags:  [],
                     photo: '',
                     category_id: '',
-                    price: '',
+                    site: '',
                     photoUrl: '',
                 }),
                 categories: [],

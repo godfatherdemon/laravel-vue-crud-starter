@@ -40,7 +40,7 @@ class ProductRequest extends FormRequest
             'category_id' => 'required|integer|exists:categories,id',
             'name' => 'required|string|max:191',
             'description' => 'required|string|max:1000',
-            'price' => 'required|numeric',
+            'site' => 'required|numeric',
             // 'tags' => 'required|array',
             // 'photo' => 'sometimes|files',
         ];
@@ -57,7 +57,7 @@ class ProductRequest extends FormRequest
             'category_id' => 'required|integer|exists:categories,id',
             'name' => 'required|string|max:191',
             'description' => 'required|string|max:1000',
-            'price' => 'required|numeric',
+            'site' => 'required|numeric',
             // 'tags' => 'required|array',
             // 'photo' => 'sometimes|files',
         ];
